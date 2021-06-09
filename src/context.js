@@ -66,7 +66,7 @@ export const AppProvider = (props) => {
     }
     useEffect(() => {
         fetchData()
-    }, [])
+    }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
     const AppState = {
         data,
